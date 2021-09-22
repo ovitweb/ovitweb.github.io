@@ -320,7 +320,40 @@
 	});
 	$('#time_pick').timepicker();
 
-
+	$("#contactus").submit(function(e){
+		
+		$("#submit-btn").attr("disabled", true);
+		const formData = new FormData($('#contactus')[0]);
+		e.preventDefault();
+		var object = {};
+		formData.forEach((value, key) => {
+			object[key] = value;
+		});
+		$.ajax({
+			
+			method: "POST",
+			url: "https://api.web3forms.com/submit",
+			headres: {
+				"Content-Type": "application/json",
+      			"Accept": "application/json",
+			},
+			data: object,
+			error:function(err){
+				console.log(err)  
+			},
+			success: function(res){
+			$("#submit-btn").attr("disabled", false);
+			alert("Your Message hasbeen sent. Thank You!");
+			$("#contactus")[0].reset();
+				console.log(res)
+			},
+			done:function () {
+				
+			},
+			
+		  });
+		  return false;
+	});
 
 })(jQuery);
 
