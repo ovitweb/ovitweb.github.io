@@ -9964,8 +9964,8 @@ textarea.form-control {
       outline:0px !important;
       background-color: transparent !important;
       color:#01d28e;
-      font-weight: bold;
-      font-size: 20px;
+     font-weight: 400 !important;
+   
     }
     #spanAddress{
       color: #1a1a1a !important;
@@ -9977,9 +9977,3 @@ textarea.form-control {
       flex-direction: row;
     }
   
-
-   select.translate option.option1,
-   select.translate option.option2 
-  {
-     font-weight: bold;
-  }
