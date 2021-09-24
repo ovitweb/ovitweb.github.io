@@ -3457,7 +3457,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -3517,16 +3517,18 @@ input[type="button"].btn-block {
   background-size: 100% 100%; }
 
   .logo-img{
-width:30%;
-height:auto;
-max-width:300px;
+
+   
+
   }
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; } 
+  
+  }
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
@@ -9957,3 +9959,27 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
+    select#languages.translate {
+      border: 0px !important;
+      outline:0px !important;
+      background-color: transparent !important;
+      color:#01d28e;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #spanAddress{
+      color: #1a1a1a !important;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    #headbar{
+      display: flex;
+      flex-direction: row;
+    }
+  
+
+   select.translate option.option1,
+   select.translate option.option2 
+  {
+     font-weight: bold;
+  }

@@ -354,6 +354,10 @@
 		  });
 		  return false;
 	});
+	$("li").hover(function () {
+		$(".active").removeClass("active");
+		$(this).addClass("active");
+	});
 
 })(jQuery);
 
